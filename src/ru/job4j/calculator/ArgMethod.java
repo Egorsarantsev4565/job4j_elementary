@@ -8,8 +8,8 @@
         }
 
         public static void main(String[] args) {
-            String name = "Petr Arsentev";
-            int age = 33;
+            String name = "Egor Sarantsev";
+            int age = 19;
 
             ArgMethod.hello(name, age);
 
