@@ -5,10 +5,8 @@ public class DummyBot {
         String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
         if ("Привет, Бот".equals(question)) {
             rsl = "Привет, умник.";
-        } else if ("Пока.".equals(question)) { /* заменить ... на проверку, известен ли боту этот вопрос и он знает как на него ответить. */
+        } else if ("Пока.".equals(question)) {
             rsl = "До скорой встречи.";
-        } else if ("Сколько будет 2+2?".equals(question)) {
-            rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
         }
         return rsl;
     }
@@ -18,7 +16,6 @@ public class DummyBot {
         System.out.println(rsl);
         rsl = DummyBot.answer("Пока.");
         System.out.println(rsl);
-        rsl = DummyBot.answer("Сколько будет 2+2?");
-        System.out.println(rsl);
+
     }
 }
