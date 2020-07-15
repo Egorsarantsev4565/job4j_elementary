@@ -1,4 +1,4 @@
-package ru.job4j.loop.Mortgage;
+package ru.job4j.loop;
 
 public class Mortgage {
     public static int year(double amount, int salary, double percent) {
