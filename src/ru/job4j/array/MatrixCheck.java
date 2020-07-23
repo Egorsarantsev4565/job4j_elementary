@@ -4,15 +4,15 @@ public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
         for (int index = 0; index < board.length; index++) {
-                if (board[row][index] != 'X') {
-                    result = false;
-                    break;
-                }
+            if (board[row][index] != 'X') {
+                result = false;
+                break;
             }
-            return result;
         }
+        return result;
+    }
 
-        public static boolean monoVertical(char[][] board, int column) {
+    public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (int index = 0; index < board.length; index++) {
             if (board[index][column] != 'X') {
@@ -36,10 +36,13 @@ public class MatrixCheck {
         for (int index = 0; index < board.length; index++) {
             if (board[index][index] == 'X') {
                 boolean vertGor = monoVertical(board, index) || monoHorizontal(board, index);
-                result = true;
-                break;
+                if (vertGor) {
+                    result = true;
+                    break;
+                }
             }
-        }
+
+              }
         return result;
     }
 }
